@@ -45,14 +45,15 @@ const Cart = () => {
       const data = await res.json();
 
       if (res.ok) {
-        alert("Order placed successfully");
-        loadCart();          // clear cart
-        navigate("/orders"); // ➡️ go to orders page
+        alert("Order placed successfully ✅");
+        await loadCart();      // refresh cart
+        navigate("/orders");   // go to orders page
       } else {
         alert(data.error || "Failed to place order");
       }
     } catch (error) {
       console.error("Place order error:", error);
+      alert("Server error");
     }
   };
 
@@ -67,9 +68,9 @@ const Cart = () => {
           <p className="text-gray-500">Your cart is empty</p>
         )}
 
-        {cart.map(item => (
+        {cart.map((item) => (
           <div
-            key={item._id}
+            key={item.product._id}   // ✅ FIXED KEY
             className="flex items-center justify-between mb-4 border-b pb-2"
           >
             <img

@@ -1,10 +1,10 @@
 const Footer = () => {
   return (
-    <div className="bg-gray-900 p-20 mt-20 text-white text-center">
-      <b>Contact Us</b><br />
-      Phone: 123456789 <br/>
-      Email: abc@gmail.com
-    </div>
+    <footer className="bg-indigo-600 text-white text-center py-6">
+      <p className="font-bold">Contact Us</p>
+      <p>Phone: 123456789</p>
+      <p>Email: abc@gmail.com</p>
+    </footer>
   );
 };
 
