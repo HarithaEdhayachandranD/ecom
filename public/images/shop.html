@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="flex flex-col bg-gray-200 min-h-screen pt-40 font-[Playfair_Display]">
+    <div id="nav" class="fixed top-0 left-0 w-full z-50 flex justify-between p-6 bg-gray-900 text-white">
+        <div class="bg-gray-300 text-black px-3 py-1 rounded-md font-bold">Lily</div>
+        <div class="flex gap-10">
+            <button class="bg-slate-300 text-black px-3 py-1 rounded-lg">Men</button>
+            <button class="bg-slate-300 text-black px-3 py-1 rounded-lg">Women</button>
+            <button class="bg-slate-300 text-black px-3 py-1 rounded-lg">Children</button>
+        </div>
+        <div class="flex gap-10">
+            <button class="bg-slate-300 text-black px-3 py-1 rounded-lg">Cart</button>
+            <button class="bg-slate-300 text-black px-3 py-1 rounded-lg">Logout</button>
+        </div>
+    </div>
+    <input type="text" placeholder="Search for your products " class="border-1 border-gray-400 rounded-md p-2 mr-60 ml-60 mb-20 bg-gray-300">
+    <h1 class="text-3xl text-center mt-2 font-bold">Our Unique Features</h1>
+
+    <div class="flex flex-wrap justify-center gap-10 mt-10">
+        <h2 class="w-40 text-xl text-center shadow-2xl rounded-xl p-4 bg-gray-400">Fast Delivery</h2>
+        <h2 class="w-40 text-xl text-center shadow-2xl rounded-xl p-4 bg-gray-400">Unique Styles</h2>
+        <h2 class="w-40 text-xl text-center shadow-2xl rounded-xl p-4 bg-gray-400">More Collections</h2>
+        <h2 class="w-40 text-xl text-center shadow-2xl rounded-xl p-4 bg-gray-400">Premium Quality</h2>
+        <h2 class="w-40 text-xl text-center shadow-2xl rounded-xl p-4 bg-gray-400">Hot Deals</h2>
+        <h2 class="w-40 text-xl text-center shadow-2xl rounded-xl p-4 bg-gray-400">Trusted Seller</h2>
+        <h2 class="w-40 text-xl text-center shadow-2xl rounded-xl p-4 bg-gray-400">Secure Checkout</h2>
+        <h2 class="w-40 text-xl text-center shadow-2xl rounded-xl p-4 bg-gray-400">Free Returns</h2>
+        <h2 class="w-40 text-xl text-center shadow-2xl rounded-xl p-4 bg-gray-400">24/7 Support</h2>
+    </div>
+    <h2 class="text-3xl text-center mt-20 font-bold">Our Collections</h2><br><br>
+
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 mt-10 justify-items-center px-5">
+
+    <div class="shadow-2xl w-60 rounded-2xl overflow-hidden bg-white ml-100">
+        <img src="C:\Users\harit\OneDrive\Desktop\try\men.webp" alt="Men">
+        <h2 class="text-xl font-bold text-center p-4">Comfort  Class </h2>
+        <h3 class="text-xl font-bold text-center p-2">Rs. 999</h3>
+    </div>
+
+    <div class=" shadow-2xl w-60 rounded-2xl overflow-hidden bg-white ml-50">
+        <img src="C:\Users\harit\OneDrive\Desktop\try\woment.webp" alt="Women">
+        <h2 class="text-xl font-bold text-center p-4">Tradition  Style  Grace</h2>
+         <h3 class="text-xl font-bold text-center p-2">Rs. 1699</h3>
+    </div>
+
+    <div class="shadow-2xl w-60 rounded-2xl overflow-hidden bg-white">
+        <img src="C:\Users\harit\OneDrive\Desktop\try\wes.webp" alt="Western">
+        <h2 class="text-xl font-bold text-center p-4">Trendy • Stylish </h2>
+         <h3 class="text-xl font-bold text-center p-2">Rs. 599 </h3>
+    </div>
+
+    <div class="shadow-2xl w-60 rounded-2xl overflow-hidden bg-white mr-50">
+        <img src="C:\Users\harit\OneDrive\Desktop\try\kid.jpg" alt="Kids">
+        <h2 class="text-xl font-bold text-center p-4">Cute • Comfy </h2>
+         <h3 class="text-xl font-bold text-center p-2">Rs. 1499 </h3>
+    </div>
+
+    <div class="shadow-2xl w-60 rounded-2xl overflow-hidden bg-white ml-100">
+        <img src="C:\Users\harit\OneDrive\Desktop\try\men2.webp" alt="Men">
+        <h2 class="text-xl font-bold text-center p-4">Comfort • Class </h2>
+         <h3 class="text-xl font-bold text-center p-2">Rs. 899</h3>
+    </div>
+
+    <div class="shadow-2xl w-60 rounded-2xl overflow-hidden bg-white ml-50">
+        <img src="C:\Users\harit\OneDrive\Desktop\try\kid2.jpg" alt="Women">
+        <h2 class="text-xl font-bold text-center p-4">Tradition • Style </h2>
+         <h3 class="text-xl font-bold text-center p-2">Rs. 1999</h3>
+    </div>
+
+    <div class="shadow-2xl w-60 rounded-2xl overflow-hidden bg-white">
+        <img src="C:\Users\harit\OneDrive\Desktop\try\sar.webp" alt="Western">
+        <h2 class="text-xl font-bold text-center p-4">Trendy • Stylish </h2>
+         <h3 class="text-xl font-bold text-center p-2">Rs. 499</h3>
+    </div>
+
+    <div class="shadow-2xl w-60 rounded-2xl overflow-hidden bg-white mr-50">
+        <img src="C:\Users\harit\OneDrive\Desktop\try\fr.webp" alt="Kids">
+        <h2 class="text-xl font-bold text-center p-4">Cute • Comfy </h2>
+         <h3 class="text-xl font-bold text-center p-2">Rs. 799</h3>
+    </div>
+    <div class="shadow-2xl w-60 rounded-2xl overflow-hidden bg-white ml-100">
+        <img src="C:\Users\harit\OneDrive\Desktop\try\wom2.webp" alt="Men">
+        <h2 class="text-xl font-bold text-center p-4">Comfort  Class </h2>
+        <h3 class="text-xl font-bold text-center p-2">Rs. 999</h3>
+    </div>
+
+    <div class="shadow-2xl w-60 rounded-2xl overflow-hidden bg-white ml-50">
+        <img src="C:\Users\harit\OneDrive\Desktop\try\men3.webp" alt="Women">
+        <h2 class="text-xl font-bold text-center p-4">Tradition  Style  Grace</h2>
+         <h3 class="text-xl font-bold text-center p-2">Rs. 1699</h3>
+    </div>
+
+    <div class="shadow-2xl w-60 rounded-2xl overflow-hidden bg-white">
+        <img src="C:\Users\harit\OneDrive\Desktop\try\sar2.webp" alt="Western">
+        <h2 class="text-xl font-bold text-center p-4">Trendy • Stylish </h2>
+         <h3 class="text-xl font-bold text-center p-2">Rs. 599 </h3>
+    </div>
+
+    <div class="shadow-2xl w-60 rounded-2xl overflow-hidden bg-white mr-50">
+        <img src="C:\Users\harit\OneDrive\Desktop\try\wom3.webp" alt="Kids">
+        <h2 class="text-xl font-bold text-center p-4">Cute • Comfy </h2>
+         <h3 class="text-xl font-bold text-center p-2">Rs. 1499 </h3>
+    </div>
+
+    <div class="shadow-2xl w-60 rounded-2xl overflow-hidden bg-white ml-100">
+        <img src="C:\Users\harit\OneDrive\Desktop\try\men2.webp" alt="Men">
+        <h2 class="text-xl font-bold text-center p-4">Comfort • Class </h2>
+         <h3 class="text-xl font-bold text-center p-2">Rs. 899</h3>
+    </div>
+
+    <div class=" shadow-2xl w-60 rounded-2xl overflow-hidden bg-white ml-50">
+        <img src="C:\Users\harit\OneDrive\Desktop\try\wom.webp" alt="Women">
+        <h2 class="text-xl font-bold text-center p-4">Tradition • Style </h2>
+         <h3 class="text-xl font-bold text-center p-2">Rs. 1999</h3>
+    </div>
+
+    <div class="shadow-2xl w-60 rounded-2xl overflow-hidden bg-white">
+        <img src="C:\Users\harit\OneDrive\Desktop\try\sar.webp" alt="Western">
+        <h2 class="text-xl font-bold text-center p-4">Trendy • Stylish </h2>
+         <h3 class="text-xl font-bold text-center p-2">Rs. 499</h3>
+    </div>
+
+    <div class="shadow-2xl w-60 rounded-2xl overflow-hidden bg-white mr-50">
+        <img src="C:\Users\harit\OneDrive\Desktop\try\fr.webp" alt="Kids">
+        <h2 class="text-xl font-bold text-center p-4">Cute • Comfy </h2>
+         <h3 class="text-xl font-bold text-center p-2">Rs. 799</h3>
+    </div>
+</div>
+</div>
+    <footer class="bg-gray-900 p-20 mt-20 text-white text-center">
+        <b>Contact Us</b><br>
+        Phone: 123456789 <br>
+        Email: abc@gmail.com
+    </footer>
+</body>
+</html>
