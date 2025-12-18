@@ -40,7 +40,7 @@ export const GlobalProvider = ({ children }) => {
     }
 
     try {
-      const res = await fetch("http://localhost:3001/cart", {
+      const res = await fetch("https://backend-1-8ldb.onrender.com/cart", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -71,7 +71,7 @@ export const GlobalProvider = ({ children }) => {
   }
 
   try {
-    const res = await fetch("http://localhost:3001/cart", {
+    const res = await fetch("https://backend-1-8ldb.onrender.com/cart", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -102,7 +102,7 @@ export const GlobalProvider = ({ children }) => {
   if (!token) return;
 
   try {
-    const res = await fetch("http://localhost:3001/orders", {
+    const res = await fetch("https://backend-1-8ldb.onrender.com/orders", {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -128,7 +128,7 @@ export const GlobalProvider = ({ children }) => {
   const addProduct = async (product) => {
     const token = localStorage.getItem("token");
 
-    await fetch("http://localhost:3001/products", {
+    await fetch("https://backend-1-8ldb.onrender.com/products", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -141,7 +141,7 @@ export const GlobalProvider = ({ children }) => {
   };
 
   const deleteProduct = async (id) => {
-    await fetch(`http://localhost:3001/products/${id}`, {
+    await fetch(`https://backend-1-8ldb.onrender.com/products/${id}`, {
       method: "DELETE",
     });
 
