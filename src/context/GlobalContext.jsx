@@ -10,7 +10,7 @@ export const GlobalProvider = ({ children }) => {
   /* ================= PRODUCTS ================= */
   const loadProducts = async () => {
     try {
-      const res = await fetch("http://localhost:3001/products");
+      const res = await fetch("https://backend-1-8ldb.onrender.com/products");
       const data = await res.json();
 
       if (Array.isArray(data)) {
